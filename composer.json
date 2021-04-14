@@ -1,5 +1,6 @@
 {
     "name": "iwindy/laravel-permission",
+    "license": "MIT",
     "authors": [
         {
             "name": "iwindy",
