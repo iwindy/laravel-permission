@@ -1,0 +1,25 @@
+{
+    "name": "iwindy/laravel-permission",
+    "authors": [
+        {
+            "name": "iwindy",
+            "email": "203962638@qq.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PermissionServiceProvider'"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Iwindy\\LaravelPermission\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "require": {}
+}
