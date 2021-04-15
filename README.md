@@ -1,4 +1,11 @@
 
+## 介绍
+    一个优雅的laravel路由授权扩展
+## 安装
+~~~
+composer require iwindy/laravel-permission
+~~~
+
 ## 发布资源
 ~~~
 php artisan vendor:publish --provider="Iwindy\LaravelPermission\PermissionServiceProvider"
@@ -16,7 +23,7 @@ Route::post('system', 'SystemController@seting')->auth('系统', '设置');
 
 // 资源路由
 Route::resource('users', App\Http\Controllers\UserController::class)->auth('用户管理');
-Route::resource('users', App\Http\Controllers\UserController::class)->auth('User',[
+Route::resource('users', App\Http\Controllers\UserController::class)->auth('用户管理',[
     'index' => '用户列表',
     'create' => '创建用户',
 ]);

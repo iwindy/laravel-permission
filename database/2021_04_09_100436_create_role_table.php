@@ -17,7 +17,7 @@ class CreateRoleTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('guard');
-            $table->string('describe');
+            $table->string('description');
             $table->unsignedTinyInteger('enabled')->default(1);
             $table->unsignedInteger('created_at')->nullable();
             $table->unsignedInteger('updated_at')->nullable();
